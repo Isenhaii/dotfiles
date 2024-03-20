@@ -8,6 +8,27 @@ if [ "$(id -u)" -eq 0 ]; then
     echo $(which apt)
     if [[ -n "$(which apt)" ]]; then
         echo "apt is installed exactly as specified."
+	apt install -y \
+		nmap \
+		bind-tools \
+		libgl1-mesa-glx \
+	        libegl1-mesa \
+		libxrandr2 \
+		libxrandr2 \
+ 		libxss1 \
+ 		libxcursor1 \
+		libxcomposite1 \
+ 		libasound2 libxi6 \
+ 		libxtst6libgl1-mesa-glx \
+ 		libegl1-mesa \
+ 		libxrandr2 \
+ 		libxrandr2 \
+ 		libxss1 \
+ 		libxcursor1 \
+ 		libxcomposite1 \
+ 		libasound2 \
+ 		libxi6 \
+ 		libxtst6
     else
         echo "apt is not installed at the specified location."
     fi
