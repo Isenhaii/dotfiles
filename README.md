@@ -22,3 +22,5 @@ else
     echo "NOT running as root!"
 fi
 ```
+This code snippet checks whether the user running the script is the root user or not. It uses the id -u command to get the user ID, and if the ID is equal to 0 (which is the ID of the root user), it prints "Running as root!". Otherwise, it prints "NOT running as root!". So, it helps identify if the script is being executed with root privileges or not.
+
