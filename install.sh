@@ -22,7 +22,7 @@ sleep 3
 	#If apt is installed, do the following
 	sudo apt update
 	sudo apt install dnsutils
-    echo "dnsutils has been installed."
+    echo "dnsutils has been installed"
 
 else
     echo "apt package manager is NOT installed"
