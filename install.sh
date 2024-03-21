@@ -1,7 +1,10 @@
 #!/bin/bash
+# get username that called script
+echo $SUDO_USER
+ME=$SUDO_USER
 
+# check if effective user id is 0 (root)
 
-=======
 if [[ "$(id -u)" -eq 0 ]]; then
 	echo "Script is running as root"
 	# check if apt is package manager
@@ -45,7 +48,6 @@ if [[ "$(id -u)" -eq 0 ]]; then
 		unzip awsdl/awscliv2.zip -d awsdl/
 		./awsdl/aws/install
 	fi 
->>>>>>> 56d2926cc7f5e6f1ce24a79c601e34e9b7d20ab7
 
 	# moving git files
 	ln -s /home/$ME/dotfiles/gitfiles/.gitconfig /home/$ME/.gitconfig
