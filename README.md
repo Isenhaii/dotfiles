@@ -15,11 +15,10 @@ Below are the basic rules for this section:
 4. Determine how to run remainder of taskings as non-root so that the right ownership is applied
 
 1. To check if the script is running as root, I came up with the following code:
-<mark>
+```
 if [ "$(id -u)" -eq 0 ]; then
     echo "Running as root!"
 else
     echo "NOT running as root!"
 fi
-</mark>
-
+```
