@@ -70,3 +70,5 @@ sleep 3
 echo "Configuring git..."
 sleep 2
 source /isenhaii/dotfiles/gitconfigure.sh
+
+
