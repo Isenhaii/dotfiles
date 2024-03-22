@@ -1,0 +1,7 @@
+[user]
+	email = wheelock.4@wright.edu
+	name = Allan Wheelock
+[core]
+	editor = nano
+[help]
+	autocorrect = 1
