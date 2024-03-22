@@ -27,9 +27,6 @@ sleep 2
     echo "dnsutils has been installed"
 	fi
 
-
-
-
 sleep 2
 	echo "Installing nmap..."
 sleep 2
@@ -41,9 +38,6 @@ sleep 2
 	sudo apt install nmap
     echo "nmap has been installed"
 	fi
-
-
-
 
 sleep 2
 	echo "Installing cmatrix..."
@@ -57,8 +51,6 @@ sleep 2
     echo "cmatrix has been installed"
 	fi
 
-
-
 sleep 3
 	echo "Installing Anaconda. This may take some time..."
 sleep 2
@@ -66,16 +58,15 @@ sleep 2
     echo "Anaconda is already installed!"
 	else
 sleep 2
+	#If apt is installed and Anaconda is NOT installed, do the following (call to a separate script to install Anaconda)
 	source /isenhaii/dotfiles/anacondainstall.sh
 	fi
-
-
-
-
-
-
-
 
 else
     echo "Error: apt package manager is NOT installed"
 fi
+
+sleep 3
+echo "Configuring git..."
+sleep 2
+source /isenhaii/dotfiles/gitconfigure.sh
