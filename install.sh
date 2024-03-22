@@ -59,6 +59,16 @@ sleep 2
 
 
 
+sleep 3
+	echo "Installing Anaconda. This may take some time..."
+sleep 2
+	if [ -d "$HOME/anaconda3" ] || command -v anaconda >/dev/null 2>&1 || command -v conda >/dev/null 2>&1; then
+    echo "Anaconda is already installed!"
+	else
+sleep 2
+	source /isenhaii/dotfiles/anacondainstall.sh
+	fi
+
 
 
 
